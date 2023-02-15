@@ -11,8 +11,8 @@ describe('GET /items', () => {
   it('should return a list of medical bills if there are bills', async () => {
     const bill = {
       patientName: 'micheal mylers',
-      patientAddress: '123 Main St',
-      hospitalName: 'Memorial Hospital',
+      patientAddress: '12 pain St',
+      hospitalName: 'private Hospital',
       dateOfService: '2042-01-01',
       billAmount: 1000
     };
@@ -28,9 +28,9 @@ describe('POST /items', () => {
   it('should create a new medical bill', async () => {
     const bill = {
       patientName: 'Jerry Dog',
-      patientAddress: '456 Main St',
+      patientAddress: '456 rain St',
       hospitalName: 'General Hospital',
-      dateOfService: '2022-01-01',
+      dateOfService: '2022-21-01',
       billAmount: 500
     };
     const res = await request(app).post('/items').send(bill);
